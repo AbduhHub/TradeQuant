@@ -57,7 +57,9 @@ cd tradequant
 Create virtual environment:
 
 python -m venv venv
+
 venv\Scripts\activate (Windows)
+
 source venv/bin/activate (Mac/Linux)
 
 Install dependencies:

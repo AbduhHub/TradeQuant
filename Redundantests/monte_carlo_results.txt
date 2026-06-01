@@ -1,0 +1,28 @@
+MONTE CARLO SIMULATION RESULTS
+
+
+Date: 2026-05-24 18:33:56.080276
+Symbol: BTCUSD
+Trades analyzed: 6
+Simulations: 10,000
+Initial capital: $10,000.00
+
+FINAL EQUITY DISTRIBUTION:
+--------------------------------------------------------------------------------
+Mean:              $8,836.15
+Median:            $8,829.95
+95% Confidence:    $8,375.97 - $9,354.23
+
+RETURN DISTRIBUTION:
+--------------------------------------------------------------------------------
+Mean:              -11.64%
+Median:            -11.70%
+95% Confidence:    -16.24% - -6.46%
+
+RISK METRICS:
+--------------------------------------------------------------------------------
+Risk of Ruin:             0.00%
+Probability of Profit:    0.0%
+P(Drawdown > 20%):        0.0%
+P(Drawdown > 30%):        0.0%
+P(Drawdown > 50%):        0.0%

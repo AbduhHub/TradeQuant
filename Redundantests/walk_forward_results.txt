@@ -1,0 +1,118 @@
+WALK-FORWARD TESTING RESULTS
+
+
+Date: 2026-05-24 18:31:19.101357
+Symbol: BTCUSD
+Windows tested: 17
+
+SUMMARY:
+--------------------------------------------------------------------------------
+In-sample Avg R:     -2.842
+Out-of-sample Avg R: -1.170
+Degradation:         -1.672 (58.8%)
+Consistency:         5.9%
+
+DETAILED RESULTS BY WINDOW:
+--------------------------------------------------------------------------------
+
+Window 1:
+  Period: 2020-06-05 to 2020-09-17
+  In-sample:  10 trades, -8.724 avg R
+  Out-sample: 17 trades, -4.696 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 2:
+  Period: 2020-09-17 to 2020-12-30
+  In-sample:  24 trades, -4.712 avg R
+  Out-sample: 6 trades, -3.124 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.001, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 3:
+  Period: 2020-12-30 to 2021-04-13
+  In-sample:  21 trades, -4.264 avg R
+  Out-sample: 0 trades, 0.000 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.005, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 4:
+  Period: 2021-04-13 to 2021-07-26
+  In-sample:  21 trades, -4.264 avg R
+  Out-sample: 0 trades, 0.000 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.005, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 5:
+  Period: 2021-07-26 to 2021-11-07
+  In-sample:  21 trades, -3.982 avg R
+  Out-sample: 0 trades, 0.000 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 6:
+  Period: 2021-11-07 to 2022-02-20
+  In-sample:  21 trades, -3.982 avg R
+  Out-sample: 0 trades, 0.000 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 7:
+  Period: 2022-02-20 to 2022-06-04
+  In-sample:  10 trades, -4.972 avg R
+  Out-sample: 4 trades, -1.379 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 1.5, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 10:
+  Period: 2022-12-29 to 2023-04-12
+  In-sample:  10 trades, -1.837 avg R
+  Out-sample: 2 trades, 0.098 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.001, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 11:
+  Period: 2023-04-12 to 2023-07-26
+  In-sample:  12 trades, -1.514 avg R
+  Out-sample: 10 trades, -1.541 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.001, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 12:
+  Period: 2023-07-26 to 2023-11-07
+  In-sample:  10 trades, -1.183 avg R
+  Out-sample: 19 trades, -2.869 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': True}
+
+Window 13:
+  Period: 2023-11-07 to 2024-02-19
+  In-sample:  33 trades, -1.978 avg R
+  Out-sample: 1 trades, -1.863 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.001, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': True}
+
+Window 14:
+  Period: 2024-02-19 to 2024-06-02
+  In-sample:  35 trades, -1.897 avg R
+  Out-sample: 2 trades, -1.587 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.001, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': True}
+
+Window 15:
+  Period: 2024-06-02 to 2024-09-14
+  In-sample:  36 trades, -1.827 avg R
+  Out-sample: 3 trades, -1.652 avg R
+  Best params: {'lookback': 100, 'trend_threshold': 0.001, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': True}
+
+Window 16:
+  Period: 2024-09-14 to 2024-12-27
+  In-sample:  39 trades, -1.695 avg R
+  Out-sample: 7 trades, -0.851 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 17:
+  Period: 2024-12-27 to 2025-04-11
+  In-sample:  27 trades, -1.364 avg R
+  Out-sample: 0 trades, 0.000 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.005, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': True, 'session_filter': False}
+
+Window 18:
+  Period: 2025-04-11 to 2025-07-24
+  In-sample:  10 trades, -0.061 avg R
+  Out-sample: 0 trades, 0.000 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 1.5, 'atr_multiplier_tp': 3.0, 'volume_filter': True, 'session_filter': True}
+
+Window 19:
+  Period: 2025-07-24 to 2025-11-05
+  In-sample:  10 trades, -0.061 avg R
+  Out-sample: 8 trades, -0.432 avg R
+  Best params: {'lookback': 200, 'trend_threshold': 0.002, 'pullback_threshold': 0.005, 'min_rr': 2.0, 'atr_multiplier_sl': 1.5, 'atr_multiplier_tp': 3.0, 'volume_filter': True, 'session_filter': True}

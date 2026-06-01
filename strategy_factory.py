@@ -1,4 +1,4 @@
-from strategies.trend_pullback import TrendPullbackStrategy
+from strategies.trend_pullback_v3 import TrendPullbackV3
 from strategies.break_retest import BreakRetestStrategy
 from strategies.inside_bar import InsideBarStrategy
 from strategies.liquidity_sweep import LiquiditySweepStrategy
@@ -6,9 +6,9 @@ from strategies.liquidity_sweep import LiquiditySweepStrategy
 
 class StrategyFactory:
     STRATEGIES = {
-        "trend_pullback": TrendPullbackStrategy,
-        "break_retest": BreakRetestStrategy,
-        "inside_bar": InsideBarStrategy,
+        "trend_pullback": TrendPullbackV3,
+        "break_retest":   BreakRetestStrategy,
+        "inside_bar":     InsideBarStrategy,
         "liquidity_sweep": LiquiditySweepStrategy,
     }
 
@@ -23,25 +23,19 @@ class StrategyFactory:
 
         StrategyClass = cls.STRATEGIES[key]
 
-        # Trend Pullback: immutable
-        if key == "trend_pullback":
-            return StrategyClass(candles)
-
-        # Normalize context
         if context is None:
             context = {}
         elif not isinstance(context, dict):
             context = {}
 
-        # Liquidity Sweep REQUIRES structure
         if key == "liquidity_sweep":
             if "swing_highs" not in context or "swing_lows" not in context:
                 raise RuntimeError(
-                    "Liquidity Sweep requires swing_highs and swing_lows. "
-                    "UI path does not provide structure data."
+                    "Liquidity Sweep needs swing structure; use single-run mode."
                 )
 
-        return StrategyClass(
-            candles=candles,
-            **context
-        )
+        # TrendPullbackV3 only needs candles; context may carry gaps (ignored)
+        if key == "trend_pullback":
+            return StrategyClass(candles=candles)
+
+        return StrategyClass(candles=candles, **context)

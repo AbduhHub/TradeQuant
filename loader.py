@@ -46,7 +46,13 @@ def detect_gaps(candles, timeframe_minutes):
 
     for i in range(1, len(candles)):
         diff = (candles[i]["time"] - candles[i - 1]["time"]).total_seconds()
-        if diff != expected_delta:
+        # if diff != expected_delta:
+        prev = candles[i - 1]["time"]
+        curr = candles[i]["time"]
+
+        if diff > expected_delta:
+            if prev.weekday() == 4 and curr.weekday() in [6, 0]:
+                continue
             gap_indices.add(i)
 
     return gap_indices

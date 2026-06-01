@@ -151,7 +151,11 @@ class Trade:
             self._r_multiple = 0.0
         else:
             self._r_multiple = reward / risk
-            if price == self.sl:
+            # Determine sign by whether the trade made or lost money
+            # This correctly handles gap-closes between entry and SL
+            if self.direction == 'long' and price < self.entry_price:
+                self._r_multiple *= -1
+            elif self.direction == 'short' and price > self.entry_price:
                 self._r_multiple *= -1
         
         self.total_r = self._r_multiple

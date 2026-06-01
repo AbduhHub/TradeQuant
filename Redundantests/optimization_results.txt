@@ -1,0 +1,70 @@
+PARAMETER OPTIMIZATION RESULTS
+
+
+Date: 2026-05-24 20:08:27.759940
+Symbol: BTCUSD
+Data points: 245,275
+Combinations tested: 2,916
+Valid results: 1076
+
+BEST PARAMETERS:
+--------------------------------------------------------------------------------
+lookback: 50
+trend_threshold: 0.002
+pullback_threshold: 0.01
+min_rr: 1.5
+atr_multiplier_sl: 2.0
+atr_multiplier_tp: 4.0
+volume_filter: False
+session_filter: False
+
+BEST PERFORMANCE:
+--------------------------------------------------------------------------------
+Total Trades: 4395
+Win Rate: 29.24%
+Average R: -1.003
+Total R: -4407.08
+Max DD: 4407.31
+
+TOP 10 RESULTS:
+--------------------------------------------------------------------------------
+
+#1
+Avg R: -1.003, Total R: -4407.08, Win Rate: 29.2%
+Parameters: {'lookback': 50, 'trend_threshold': 0.002, 'pullback_threshold': 0.01, 'min_rr': 1.5, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': False}
+
+#2
+Avg R: -1.016, Total R: -4111.82, Win Rate: 29.0%
+Parameters: {'lookback': 50, 'trend_threshold': 0.005, 'pullback_threshold': 0.01, 'min_rr': 1.5, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': False}
+
+#3
+Avg R: -1.017, Total R: -4571.00, Win Rate: 29.0%
+Parameters: {'lookback': 50, 'trend_threshold': 0.001, 'pullback_threshold': 0.01, 'min_rr': 1.5, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': False}
+
+#4
+Avg R: -1.026, Total R: -3722.35, Win Rate: 28.9%
+Parameters: {'lookback': 50, 'trend_threshold': 0.005, 'pullback_threshold': 0.01, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': False}
+
+#5
+Avg R: -1.029, Total R: -4222.22, Win Rate: 29.0%
+Parameters: {'lookback': 50, 'trend_threshold': 0.001, 'pullback_threshold': 0.01, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': False}
+
+#6
+Avg R: -1.030, Total R: -4153.70, Win Rate: 29.2%
+Parameters: {'lookback': 50, 'trend_threshold': 0.002, 'pullback_threshold': 0.01, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': False}
+
+#7
+Avg R: -1.072, Total R: -4346.39, Win Rate: 30.2%
+Parameters: {'lookback': 50, 'trend_threshold': 0.005, 'pullback_threshold': 0.01, 'min_rr': 1.5, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 3.0, 'volume_filter': False, 'session_filter': False}
+
+#8
+Avg R: -1.086, Total R: -2613.58, Win Rate: 28.5%
+Parameters: {'lookback': 50, 'trend_threshold': 0.005, 'pullback_threshold': 0.01, 'min_rr': 1.5, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': True}
+
+#9
+Avg R: -1.106, Total R: -5086.41, Win Rate: 29.8%
+Parameters: {'lookback': 50, 'trend_threshold': 0.002, 'pullback_threshold': 0.01, 'min_rr': 1.5, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 3.0, 'volume_filter': False, 'session_filter': False}
+
+#10
+Avg R: -1.108, Total R: -2308.71, Win Rate: 28.4%
+Parameters: {'lookback': 50, 'trend_threshold': 0.005, 'pullback_threshold': 0.01, 'min_rr': 2.0, 'atr_multiplier_sl': 2.0, 'atr_multiplier_tp': 4.0, 'volume_filter': False, 'session_filter': True}

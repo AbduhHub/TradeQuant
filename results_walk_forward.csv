@@ -1,0 +1,3 @@
+symbol,timeframe,windows,in_avg_r,out_avg_r,degradation_pct,consistency_score,profitable_out_pct
+XAUUSD,H1,36,0.123,0.351,-184.8,50.0,50.0
+EURUSD,H1,75,0.199,0.168,15.9,64.0,64.0

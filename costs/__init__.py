@@ -4,6 +4,9 @@ Costs Module
 Transaction cost models for realistic backtesting.
 """
 
-from .transaction_costs import CostModel, SymbolCostConfig, get_cost_model
+from .transaction_costs import CostModel, InstrumentConfig, get_cost_model, get_instrument_config
 
-__all__ = ['CostModel', 'SymbolCostConfig', 'get_cost_model']
+# backward compat alias
+SymbolCostConfig = InstrumentConfig
+
+__all__ = ['CostModel', 'InstrumentConfig', 'SymbolCostConfig', 'get_cost_model', 'get_instrument_config']
